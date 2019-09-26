@@ -12,7 +12,6 @@ class GamesController < ApplicationController
   def show
     game = Game.find(params[:id])
     render json: game.to_json
-
   end
 
   def update
